@@ -1,7 +1,4 @@
+import pandas
 import streamlit
-
-streamlit.title(' :) My Parent New healthy Dinner')
-streamlit.header('Breakfast favorites')
-streamlit.text('Some Apples and Oranges')
-streamlit.text('A cup of tea')
-streamlit.text('White bread')
+fruitlist=pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+streamlit.dataframe( fruitlist )
